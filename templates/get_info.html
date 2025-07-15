@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Send Info</title>
+    </head>
+    <body>
+        <h1>Send Info</h1>
+        <div id="Info">
+            <form action="/result" method="post">
+                <label for="airline">airline:</label><br>
+                <select id="airline" name="airline" required>
+                  <option value="" disabled selected>Select Airline</option>
+                  <option value="AS">Alaska Airlines AS / ASA</option>
+                  <option value="AA">American Airlines AA / AAL</option>
+                  <option value="AC">Air Canada AC / ACA</option>
+                  <option value="AM">Aeromexico AM / AMX</option>
+                  <option value="CO">Continental Airlines CO / COA</option>
+                  <option value="DL">Delta Airlines DL / DAL</option>
+                  <option value="FX">FedEx FX / FDX</option>
+                  <option value="HA">Hawaiian Airlines HA / HAL</option>
+                  <option value="NW">Northwest Airlines NW / NWA</option>
+                  <option value="PO">Polar Air Cargo PO / PAC</option>
+                  <option value="SW">Southwest Airlines SW / SWA</option>
+                  <option value="UA">United Airlines UA / UAL</option>
+                  <option value="5X">United Parcel (UPS) 5X / UPS</option>
+                  <option value="VS">Virgin Atlantic VS / VIR</option>
+                  <option value="VB">VivaAerobús VB / VIV</option>
+                  <option value="WS">WestJet WS / WJ</option>
+                </select><br><br>
+
+
+                <!-- AirportFrom -->
+                <label for="AirportFrom">Airport From:</label><br>
+                <select id="AirportFrom" name="AirportFrom" required>
+                    <option value="" disabled selected>Select Airport</option>
+                    <option value="ATL">ATL - Hartsfield-Jackson Atlanta International Airport - Georgia</option>
+                    <option value="AUS">AUS - Austin-Bergstrom International Airport - Texas</option>
+                    <option value="BNA">BNA - Nashville International Airport - Tennessee</option>
+                    <option value="BOS">BOS - Boston Logan International Airport - Massachusetts</option>
+                    <option value="BWI">BWI - Baltimore-Washington International Thurgood Marshall Airport - Washington</option>
+                    <option value="CLT">CLT - Charlotte Douglas International Airport - North Carolina</option>
+                    <option value="DAL">DAL - Dallas Love Field - Texas</option>
+                    <option value="DCA">DCA - Ronald Reagan Washington National Airport - Arlington, Virginia</option>
+                    <option value="DEN">DEN - Denver International Airport - Colorado</option>
+                    <option value="DFW">DFW - Dallas/Fort Worth International Airport - Texas</option>
+                    <option value="DTW">DTW - Detroit Metropolitan Airport - Michigan</option>
+                    <option value="EWR">EWR - Newark Liberty International Airport - New Jersey</option>
+                    <option value="FLL">FLL - Fort Lauderdale–Hollywood International Airport - Florida</option>
+                    <option value="HNL">HNL - Daniel K. Inouye International Airport - Honolulu, Hawaii</option>
+                    <option value="HOU">HOU - William P. Hobby Airport - Houston, Texas</option>
+                    <option value="IAD">IAD - Dulles International Airport - Virginia</option>
+                    <option value="IAH">IAH - George Bush Intercontinental Airport - Houston, Texas</option>
+                    <option value="JFK">JFK - John F. Kennedy International Airport - Queens, New York</option>
+                    <option value="LAS">LAS - McCarran International Airport - Las Vegas, Nevada</option>
+                    <option value="LAX">LAX - Los Angeles International Airport - California</option>
+                    <option value="LGA">LGA - LaGuardia Airport - Queens, New York</option>
+                    <option value="MCO">MCO - Orlando International Airport - Florida</option>
+                    <option value="MDW">MDW - Chicago Midway International Airport - Illinois</option>
+                    <option value="MIA">MIA - Miami International Airport - Florida</option>
+                    <option value="MSP">MSP - Minneapolis–Saint Paul International Airport - Minnesota</option>
+                    <option value="MSY">MSY - Louis Armstrong New Orleans International Airport - Louisiana</option>
+                    <option value="OAK">OAK - Oakland International Airport - California</option>
+                    <option value="ORD">ORD - O'Hare International Airport - Chicago, Illinois</option>
+                    <option value="PDX">PDX - Portland International Airport - Oregon</option>
+                    <option value="PHL">PHL - Philadelphia International Airport - Pennsylvania</option>
+                    <option value="PHX">PHX - Phoenix Sky Harbor International Airport - Arizona</option>
+                    <option value="RDU">RDU - Raleigh-Durham International Airport - North Carolina</option>
+                    <option value="SAN">SAN - San Diego International Airport - California</option>
+                    <option value="SEA">SEA - Seattle–Tacoma International Airport - Washington</option>
+                    <option value="SFO">SFO - San Francisco International Airport - California</option>
+                    <option value="SJC">SJC - Norman Y. Mineta San Jose International Airport - California</option>
+                    <option value="SLC">SLC - Salt Lake City International Airport - Utah</option>
+                    <option value="SMF">SMF - Sacramento International Airport - California</option>
+                    <option value="STL">STL - St. Louis Lambert International Airport - Missouri</option>
+                    <option value="TPA">TPA - Tampa International Airport - Florida</option>
+                </select><br><br>
+                <label for="AirportTo">Airport To:</label><br>
+                <select id="AirportTo" name="AirportTo" required>
+                    <option value="" disabled selected>Select Airport</option>
+                    <option value="ATL">ATL - Hartsfield-Jackson Atlanta International Airport - Georgia</option>
+                    <option value="AUS">AUS - Austin-Bergstrom International Airport - Texas</option>
+                    <option value="BNA">BNA - Nashville International Airport - Tennessee</option>
+                    <option value="BOS">BOS - Boston Logan International Airport - Massachusetts</option>
+                    <option value="BWI">BWI - Baltimore-Washington International Thurgood Marshall Airport - Washington</option>
+                    <option value="CLT">CLT - Charlotte Douglas International Airport - North Carolina</option>
+                    <option value="DAL">DAL - Dallas Love Field - Texas</option>
+                    <option value="DCA">DCA - Ronald Reagan Washington National Airport - Arlington, Virginia</option>
+                    <option value="DEN">DEN - Denver International Airport - Colorado</option>
+                    <option value="DFW">DFW - Dallas/Fort Worth International Airport - Texas</option>
+                    <option value="DTW">DTW - Detroit Metropolitan Airport - Michigan</option>
+                    <option value="EWR">EWR - Newark Liberty International Airport - New Jersey</option>
+                    <option value="FLL">FLL - Fort Lauderdale–Hollywood International Airport - Florida</option>
+                    <option value="HNL">HNL - Daniel K. Inouye International Airport - Honolulu, Hawaii</option>
+                    <option value="HOU">HOU - William P. Hobby Airport - Houston, Texas</option>
+                    <option value="IAD">IAD - Dulles International Airport - Virginia</option>
+                    <option value="IAH">IAH - George Bush Intercontinental Airport - Houston, Texas</option>
+                    <option value="JFK">JFK - John F. Kennedy International Airport - Queens, New York</option>
+                    <option value="LAS">LAS - McCarran International Airport - Las Vegas, Nevada</option>
+                    <option value="LAX">LAX - Los Angeles International Airport - California</option>
+                    <option value="LGA">LGA - LaGuardia Airport - Queens, New York</option>
+                    <option value="MCO">MCO - Orlando International Airport - Florida</option>
+                    <option value="MDW">MDW - Chicago Midway International Airport - Illinois</option>
+                    <option value="MIA">MIA - Miami International Airport - Florida</option>
+                    <option value="MSP">MSP - Minneapolis–Saint Paul International Airport - Minnesota</option>
+                    <option value="MSY">MSY - Louis Armstrong New Orleans International Airport - Louisiana</option>
+                    <option value="OAK">OAK - Oakland International Airport - California</option>
+                    <option value="ORD">ORD - O'Hare International Airport - Chicago, Illinois</option>
+                    <option value="PDX">PDX - Portland International Airport - Oregon</option>
+                    <option value="PHL">PHL - Philadelphia International Airport - Pennsylvania</option>
+                    <option value="PHX">PHX - Phoenix Sky Harbor International Airport - Arizona</option>
+                    <option value="RDU">RDU - Raleigh-Durham International Airport - North Carolina</option>
+                    <option value="SAN">SAN - San Diego International Airport - California</option>
+                    <option value="SEA">SEA - Seattle–Tacoma International Airport - Washington</option>
+                    <option value="SFO">SFO - San Francisco International Airport - California</option>
+                    <option value="SJC">SJC - Norman Y. Mineta San Jose International Airport - California</option>
+                    <option value="SLC">SLC - Salt Lake City International Airport - Utah</option>
+                    <option value="SMF">SMF - Sacramento International Airport - California</option>
+                    <option value="STL">STL - St. Louis Lambert International Airport - Missouri</option>
+                    <option value="TPA">TPA - Tampa International Airport - Florida</option>
+                </select><br><br>
+                <label for="day">Day:</label><br>
+                <select id="day" name="day" required>
+                    <option value="" disabled selected>Select day</option>
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>  
+                    <option value="7">Sunday</option>
+                </select><br><br>
+                <label for="time">Time:</label><br>
+                <input type="text" id="time" name="time" required placeholder="time .."><br><br>
+                <label for="Length">Length:</label><br>
+                <input type="text" id="Length" name="Length" required placeholder="length .."><br><br>
+                <button type="submit">Submit</button>
+
+
+
+
+            </form>
+        </div>
+    </body>
+</html>

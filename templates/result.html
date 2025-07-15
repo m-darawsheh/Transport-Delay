@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Predict Transport Delay</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>The predicted transport delay result is:</h1>
+    <h2>{{ delay_prediction }}</h2>
+    {% if confidence != "N/A" %}
+    <p>Confidence: {{ confidence }}</p>
+    {% endif %}
+    <p>Thank you for using our service!</p>
+    <button onclick="window.location.href='/'">Back to Home</button>
+</body>
+</html>
