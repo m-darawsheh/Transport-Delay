@@ -96,4 +96,4 @@ def result():
                              delay_prediction="Error in prediction. Please try again.",
                              confidence="N/A")
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5002)

@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Predict Transport Delay</title>
+    <title>Transport Delay Predictor</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to Transport Delay Prediction</h1>
-    <h2>Get accurate delay predictions for your journey</h2>
-    <p>Click the button below to predict transport delays.</p>
-    <button onclick="window.location.href='/get_info'">Predict Delay</button>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <i class="fas fa-plane"></i>
+            </div>
+            <h1>Transport Delay Predictor</h1>
+            <h2>Get accurate delay predictions for your journey</h2>
+            <p>Our advanced AI analyzes multiple factors to predict transport delays with high accuracy. Plan your journey better with real-time insights.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="feature-text">Real-time Analysis</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="feature-text">Smart Predictions</div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="feature-text">Mobile Friendly</div>
+                </div>
+            </div>
+            
+            <button class="btn" onclick="window.location.href='/get_info'">
+                <i class="fas fa-rocket" style="margin-right: 10px;"></i>
+                Start Prediction
+            </button>
+        </div>
+    </div>
 </body>
 </html>
