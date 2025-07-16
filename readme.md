@@ -58,3 +58,12 @@ This document provides an overview of the Transport Delay application, including
 1. User inputs relevant data through the web interface.
 2. The application processes the input and makes a prediction.
 3. The result is displayed on the `/result` page.
+
+## workflow
+
+1. abedalmuhdi collected the data and clean it and prepare it for the model training.
+2. The model was trained using the cleaned data by abedalmuhdi.
+3. While abedalmuhdi was looking for the data, we decided to make the flask application.
+4. mohammed darawsheh and fares worked together to build the get_info.html routes.
+5. and i did the index.html and result.html routes.
+6. finally, we told  AI agent to make interface for the application.
